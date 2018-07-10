@@ -4,7 +4,6 @@ This repository contains the following files:
 + README.md - explains the analysis files
 + CodeBook.md - explains the variables
 + run_analysis.R - the script that was used to generate the tidy dataset
-+ tidy_data.txt - the tidy dataset
 
 
 ## Dataset Overview
@@ -13,7 +12,7 @@ The data that was used in this project came from an experiment about wearable co
 
 ## The Tidy Dataset
 
-From the raw dataset (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), the following transformations were made to arrive at the tidy dataset:
+From the raw dataset (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), the following transformations were made:
 
 + Merged the train and test datasets into one dataset
 + Trimmed the data down with only those variables calculated mean and standard deviation
@@ -21,3 +20,5 @@ From the raw dataset (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfil
 + Renamed the headers of the trimmed dataset into appropriate names (e.g., removed special characters, etc)
 + Computed the average of each variable for each subject and activity (this is now the tidy dataset)
 + Exported the tidy data set as "tidy_data.txt"
+
+These steps are generated in run_analysis.R code to get the tidy dataset.
